@@ -7,4 +7,10 @@ name = io.read()
 
 p:setName(name)
 print("Hello", p:getName())
---p:printName()
+
+function Person:helloName()
+    print("Hello",p:getName())
+
+end
+
+p:helloName()
