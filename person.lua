@@ -15,8 +15,9 @@ function Person:printName()
     print(self.name)
 end
 
+--[[
 function Person:getName()
     return self.name
 end
-
+--]]
 return Person
