@@ -1,4 +1,4 @@
-Person = {name = unknown, age=0}
+Person = {name = "unknown", age=0}
 
 function Person:new(o,self)
     o = o or {}
@@ -7,12 +7,16 @@ function Person:new(o,self)
     return o;
 end
 
-function Person:setName(n)
-    self.name = n
+function Person:setName(name)
+    self.name = name
 end
 
 function Person:printName()
     print(self.name)
+end
+
+function Person:getName()
+    return self.name
 end
 
 return Person

@@ -2,5 +2,9 @@
 
 p = require "Person"
 
-p:setName("bob")
-p:printName()
+print("What is your name?")
+name = io.read()
+
+p:setName(name)
+print("Hello", p:getName())
+--p:printName()
