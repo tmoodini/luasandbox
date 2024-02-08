@@ -9,9 +9,9 @@ print("choose a number")
 x = io.read("*n")
 print("choose another")
 y = io.read("*n")
-
+io.read()
 print("would you like to add select 1 or multiply select 2?")
-answer = io.read("*n")
+answer = io.read("*l")
 if answer == 1 then
 print(addition(x, y))
 end
